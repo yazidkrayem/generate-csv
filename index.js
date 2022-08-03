@@ -43,7 +43,6 @@ const getData = async(options) => {
  const generateCsvFile = async(data, name) => {
      const count = Object.keys(data).length;
      const fileName = name ? name : 'report';
-     console.log(name, fileName);
      let dataToWrite = '';
     try {
         if (!data || data.length === 0) {   
